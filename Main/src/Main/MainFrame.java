@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 import MovieGUI.ShowTextFrame;
@@ -122,7 +123,8 @@ public class MainFrame extends JFrame{
 				JButton b3 = new JButton("提交");
 				
 				JTextField tf1 = new JTextField(18);
-				JTextField tf2 = new JTextField(18);
+				//JTextField tf2 = new JTextField(18);
+				JPasswordField tf2 = new JPasswordField(18);
 				
 				p1.add(b1);
 				p1.add(tf1);
@@ -175,7 +177,8 @@ public class MainFrame extends JFrame{
 			JButton b3 = new JButton("提交");
 			
 			JTextField tf1 = new JTextField(18);
-			JTextField tf2 = new JTextField(18);
+			//JTextField tf2 = new JTextField(18);
+			JPasswordField tf2 = new JPasswordField(18);
 			
 			p1.add(b1);
 			p1.add(tf1);

@@ -6,11 +6,11 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.DefaultHighlighter;
-
-
+import javax.swing.text.html.HTMLEditorKit.LinkController;
 
 import java.util.*;
 import java.util.List;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -278,17 +278,20 @@ public class ShowTextFrame extends JFrame {
 				
 				@Override
 				public void mouseClicked(MouseEvent e) {
-					
-					try {
-						//获取链接信息
-						URL url = new URL(ta.getText().split("\n").toString());
-						//在系统默认浏览器中打开链接
-						Desktop.getDesktop().browse(url.toURI());
-					}catch(Exception ex) {
-						ex.printStackTrace();
-					}
-					
-					
+//					
+//					
+//					try {
+//						
+//						//获取链接信息
+//						URL url = new URL(ta.getText().split("\r\n").toString());
+//						//在系统默认浏览器中打开链接
+//						Desktop.getDesktop().browse(url.toURI());
+//					}catch(Exception ex) {
+//						//ex.printStackTrace();
+//					Logger.getLogger(ListCellRenderer.class.getName()).log(Level.SEVERE, null, ex);
+//					}
+//					
+//					
 				}
 			});
 			
